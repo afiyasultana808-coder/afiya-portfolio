@@ -31,7 +31,7 @@ app.post('/api/contact', async (req, res) => {
     const { name, email, message } = req.body;
 
     try {
-        const sql = "INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)";
+        const sql = "INSERT INTO messages (name, email, message) VALUES (?, ?, ?)";
         await db.execute(sql, [name, email, message]);
 
         res.json({
