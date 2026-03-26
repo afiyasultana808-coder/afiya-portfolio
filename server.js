@@ -5,8 +5,12 @@ require('dotenv').config();
 
 const app = express();
 
-app.use(cors());
-app.use(express.json());
+app.use(cors({
+    origin:'*',
+    methods:['GET','POST'],
+    allowedHeaders:['Content-Type']
+}));
+        app.use(express.json());
 
 // DB connection
 const db = mysql.createPool({
