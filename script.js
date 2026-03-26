@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const response = await fetch('https://afiya-portfolio.onrender.com/api/contact', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(formData)
+                    body: JSON.stringify(formData),
                 });
 
                 const result = await response.json();
