@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     message: document.getElementById('message').value.trim()
                 };
 
-                const response = await fetch('https://afiya-portfolio.onrender.com/api/contact', {
+                const response = await fetch('https://afiya-portfolio.onrender.com/api/messages', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(formData),
