@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
 });
 
 // ✅ YOUR API (IMPORTANT)
-app.post('/api/contact', async (req, res) => {
+app.post('/api/messages', async (req, res) => {
     const { name, email, message } = req.body;
 
     try {
